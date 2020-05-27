@@ -1,43 +1,45 @@
 @import "vars";
 @import "global";
+.header {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 105px;
+    }
+    &__logo {
+        a {
+            font-size: 30px;
+            color: hsl(30, 96%, 68%);
+            @include f700;
+            span {
+                color: $blue;
+            }
+        }
+    }
+    &__menu {
+        display: flex;
+        align-items: center;
+        &-btn {
+            a {
+                margin-left: 20px;
+                color: #fff;
+                background-color: #2500f9;
+                @include f700;
+                padding: 20px 40px;
+                border-radius: 30px;
+            }
+        }
+        &-list {
+            display: flex;
+            a {
+                font-size: 16px;
+                color: $blue;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                margin-right: 35px;
+            }
+        }
+    }
+}
 
 @import "media";
